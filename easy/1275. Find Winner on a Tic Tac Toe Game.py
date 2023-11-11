@@ -19,7 +19,7 @@ class Solution(object):
                     if grid[row][column] != player:
                         break
                     else:
-                        right +=1
+                        right += 1
                 if right == 3:
                     return player
                 right = 0
@@ -40,7 +40,7 @@ class Solution(object):
             right = 0
 
             for j in range(3):
-                if grid[j][2-j] == player:
+                if grid[j][2 - j] == player:
                     right += 1
             if right == 3:
                 return player
@@ -51,5 +51,6 @@ class Solution(object):
 
         return "Pending"
 
+
 ob = Solution()
-print(ob.tictactoe([[0,0],[1,1],[0,1],[0,2],[1,0],[2,0]]))
+print(ob.tictactoe([[0, 0], [1, 1], [0, 1], [0, 2], [1, 0], [2, 0]]))
